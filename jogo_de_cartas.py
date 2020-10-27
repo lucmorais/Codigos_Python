@@ -1,13 +1,11 @@
 import random
 from typing import List, Tuple, Set, Dict
 
-#  https://www.alt-codes.net/suit-cards.php
 NAIPES = '♠ ♡ ♢ ♣'.split()
 CARTAS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
 CARTA = Tuple[str, str]
 BARALHO = List[CARTA]
-
 
 def criar_baralho(aleatorio: bool = False) -> BARALHO:
     """Cria um baralho com 52 cartas"""
