@@ -1,5 +1,5 @@
 """
-Escreva um programa ue receba uma senha com apenas caracteres do alfabeto ou espaço.
+Escreva um programa que receba uma senha apenas com caracteres do alfabeto ou espaço.
 Utilize o Calumma-12 para transformar os 12 primeiros caracteres do texto da senha para números.
 
 Calumma-12: 0 = a, k, u, G, Q;
@@ -13,24 +13,24 @@ Calumma-12: 0 = a, k, u, G, Q;
             8 = i, s, B, L, V;
             9 = j, t, H, R;
 
-Examplo:
-Input:
+Exemplo:
+- Entrada:
 
-3
-ProGRAmador
-IESB nota cinco no MEC
-o nome calumma vem de uma especie de camaleao
+            3
+            ProGRAmador
+            IESB nota cinco no MEC
+            o nome calumma vem de uma especie de camaleao
 
-Output:
+- Saída:
 
-00942098561
-121834902832
-434242010220
+            00942098561
+            121834902832
+            434242010220
 """
 
-n = int(input())
+n = int(input("Digite a quantidade de senhas: "))
 
-senhas = [input().replace(" ", "") for _ in range(n)]
+senhas = [input("Digite a senha: ").replace(" ", "") for _ in range(n)]
 
 calumma = [
     (0, ('a', 'k', 'u', 'G', 'Q')),
